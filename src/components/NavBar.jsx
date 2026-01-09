@@ -1,29 +1,36 @@
-import {navLinks} from "../constants";
+import React from 'react'
+import { navLinks } from '../constants'
 
-const NavBar = () => {
+function NavBar() {
     return (
         <header>
             <nav>
-                <img  src="/logo.svg" alt="Apple logo" />
+
+                <img src="/logo.svg" alt="Apple Logo" />
 
                 <ul>
-                    {navLinks.map(({ label }) => (
-                        <li key={label}>
-                            <a href={label}>{label}</a>
-                        </li>
-                    ))}
+                    {navLinks.map((link) => (
+                        <li key={link.label}>
+                            <a href={link.label}>{link.label}</a>
+                      </li>
+                    )
+                    )}
                 </ul>
 
-                <div className="flex-center gap-3">
-                    <button>
-                        <img src="/search.svg" alt="Search" />
-                    </button>
-                    <button>
-                        <img src="/cart.svg" alt="Cart" />
-                    </button>
-                </div>
+
+
+                <div className="flex-center gap-3"><button><img src="/search.svg" alt="Search" /></button>
+                <button><img src="/cart.svg" alt="Cart" /></button></div>
+
+
+
             </nav>
+
         </header>
     )
 }
+
 export default NavBar
+
+
+
