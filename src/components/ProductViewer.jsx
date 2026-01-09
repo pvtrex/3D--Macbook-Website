@@ -22,7 +22,7 @@ const isMobile =useMediaQuery({query: '(max-width:1024px)'})
             <h2>Take a closer look</h2>
 
             <div className="controls">
-          ``      <p className="info">MacbookPro {scale} in {color}</p>
+          ``      <p className="info">MacbookPro | Available in 14" & 16" in Space Gray & Dark colors</p>
 
                <div className="flex-center gap-5 mt-5">
                     <div className="color-control">
