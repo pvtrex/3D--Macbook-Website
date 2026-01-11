@@ -17,7 +17,7 @@ if (videoRef.current) {
   return (
 
 
-    <section id="hero">
+    <section id="hero" className='mt-25'>
 
       <div>
         <h1>MacBook Pro</h1>

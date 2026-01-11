@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { navLinks } from '../constants'
+import gsap  from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function NavBar() {
+
+
+    
     return (
         <header>
-            <nav>
+            <nav    >
 
                 <img src="/logo.svg" alt="Apple Logo" />
 
@@ -30,7 +37,7 @@ function NavBar() {
     )
 }
 
-export default NavBar
+export default NavBar;
 
 
 
