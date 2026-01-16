@@ -21,7 +21,8 @@
 }
 
 * {
-  scrollbar-color: var(--color-dark-100) var(--color-black);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 :root {
@@ -50,6 +51,7 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
 
 body {
   width: 100vw;
